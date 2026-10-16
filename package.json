@@ -1,0 +1,20 @@
+{
+  "name": "emaki-ai-provider",
+  "version": "0.1.0",
+  "description": "emaki provider for the Vercel AI SDK: generateVideo with Seedance 2.5 and Seedance 2.0 (text to video, image to video) and generateImage, on one emaki.ai API key",
+  "license": "MIT",
+  "author": "emaki",
+  "homepage": "https://emaki.ai/?utm_source=npm-ai-sdk&utm_medium=package",
+  "repository": { "type": "git", "url": "git+https://github.com/hanshs474/emaki-ai-provider.git" },
+  "bugs": { "url": "https://github.com/hanshs474/emaki-ai-provider/issues" },
+  "keywords": ["ai", "ai-sdk", "vercel-ai", "provider", "video-generation", "text-to-video", "image-to-video", "seedance", "seedance-2-5", "image-generation", "emaki"],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": { "build": "tsc", "test": "node --test test.mjs" },
+  "peerDependencies": { "@ai-sdk/provider": ">=4.0.0" },
+  "devDependencies": { "@ai-sdk/provider": "^4.0.28", "typescript": "^5.6.0", "ai": "^7.0.0" },
+  "engines": { "node": ">=18" }
+}
